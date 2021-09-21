@@ -1,9 +1,11 @@
 <?php
-    $texto = file_get_contents('text.txt');
+    $nome = 'Fulano da Silva';
 
-    //$texto = explode("\n", $texto);
+    /*o file_put_contents: cria um novo arquivo com o conteúdo passado
+      caso o arquivo já exista, ele vai apenas substituir o texto que já
+      estava anteriormente
+    */
+    file_put_contents('nome.txt', $nome);
 
-    //echo "Linhas: ".count($texto);
-
-    echo $texto;
+    echo 'Arquivo criado com sucesso!';
 ?>
